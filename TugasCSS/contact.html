@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <ul class="nav-links">
+                <li class="link"><a href="home.html">Home</a></li>
+                <li class="link" id="link2"><a href="gallery.html">Gallery</a></li>
+                <li class="link" id="link1"><a href="blog.html">Blog</a></li>
+                <li class="link" id="link3"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <img src="emoji.png" alt="logo">
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="contact-info">
+            <h2>Informasi Kontak</h2>
+            <p><i class="ri-contacts-line"></i> Nomor Telepon: +62 83131061517</p>
+            <p><i class="ri-mail-line"></i> Email: irhamhamid026@student.unsrat.ac.id</p>
+            <p><i class="ri-instagram-line"></i> Instagram: <a href="https://www.instagram.com/irhamid._/" target="_blank">@irhamid._</a></p>
+            <p><i class="ri-facebook-circle-line"></i> Facebook: <a href="https://www.facebook.com/irham.hamid.794/" target="_blank">Irham Hamid</a></p>
+            <p><i class="ri-whatsapp-line"></i> Whatsapp: <a href="https://wa.me/6283131061517/" target="_blank">Irham Hamid</a></p>
+        </section>        
+        <section class="contact-form">
+            <hr>
+            <p>Feedback</p>
+            <form action="submit_contact_form.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                <label for="message">Pesan:</label>
+                <br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Irham Hamid</p>
+    </footer>    
+</body>
+</html>

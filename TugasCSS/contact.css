@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    background-image: url(wp.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #1b1b1b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo img {
+    width: 170px;
+    margin-bottom: 30px;
+    transition: all ease .3s;
+}
+
+.sidebar .logo img:hover{
+    transform: scale(1.2);
+}
+
+li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #028ce8;
+    transition: all .3s ease;
+}
+
+li a:hover::after{
+    width: 50%;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: block;
+    padding: 10px 0;
+}
+
+.nav-links a:hover {
+    color: #008acf;
+    transform: translateX(5px);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.button-container button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.button-container button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+main {
+    margin-top: 20px;
+    margin-left: 220px; 
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    padding: 20px;
+    position: relative; 
+    z-index: 1; 
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-info p a {
+    font-style: italic;
+    color: #00fff2;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.contact-info p a:hover {
+    color: #008acf;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.contact-form{
+    padding: 10px 0;
+}
+
+.contact-form p {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ccc;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #666;
+}
+
+footer {
+    position: absolute;
+    bottom: 100;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
